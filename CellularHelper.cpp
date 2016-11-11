@@ -285,7 +285,7 @@ void CellularHelperEnvironmentCellData::addKeyValue(const char *key, const char 
 	}
 	else
 	if (strcmp(key, "Arfcn") == 0) {
-		arfcn = (int) strtol(value, NULL, 16); // hex
+		arfcn = atoi(value);
 	}
 	else
 	if (strcmp(key, "Arfcn_ded") == 0 || strcmp(key, "RxLevSub") == 0 || strcmp(key, "t_adv") == 0) {
@@ -364,23 +364,23 @@ void CellularHelperEnvironmentCellData::postProcess() {
 	else {
 		// 2G, use arfcn
 
-		if (arfcn >= 0 && arfcn >= 124) {
+		if (arfcn >= 0 && arfcn <= 124) {
 			band = "GSM 900";
 		}
 		else
-		if (arfcn >= 129 && arfcn >= 251) {
+		if (arfcn >= 129 && arfcn <= 251) {
 			band = "GSM 850";
 		}
 		else
-		if (arfcn >= 512 && arfcn >= 885) {
+		if (arfcn >= 512 && arfcn <= 885) {
 			band = "DCS 1800 ";
 		}
 		else
-		if (arfcn >= 975 && arfcn >= 1024) {
+		if (arfcn >= 975 && arfcn <= 1024) {
 			band = "EGSM 900";
 		}
 		else
-		if (arfcn >= 33280 && arfcn >= 33578) {
+		if (arfcn >= 33280 && arfcn <= 33578) {
 			band = "PCS 1900";
 		}
 		else {

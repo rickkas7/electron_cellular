@@ -3,13 +3,7 @@
 
 #include "Particle.h"
 
-// Class for querying information directly from the u-blox SARA modem
-
-// You will find this manual invaluable:
-// https://www.u-blox.com/sites/default/files/u-blox-ATCommands_Manual_(UBX-13002752).pdf
-
-// Updates to this code are here:
-// https://github.com/rickkas7/electron_cellular
+// Class for quering infromation directly from the ublox SARA modem
 
 /**
  * Base class for all responses. Contains the result code from
