@@ -2,6 +2,18 @@
 
 *Example code for using the Particle Electron to directly access the u-blox cellular modem*
 
+**There is a new version of this code available here:**
+
+[https://github.com/rickkas7/CellularHelper](https://github.com/rickkas7/CellularHelper)
+
+The newer version includes a rewritten parser code internally, some cleaned up APIs. It also includes a new sample program that can scan for all carriers even when your SIM can't connect to the tower. 
+
+The new version is also in the community libraries as CellularHelper so you don't need to copy and paste the code to use it now.
+
+I recommend using that version.
+
+---
+
 Here's some sample code you can use to get information about your cellular connection. It can retrieve:
 
 - Model information
